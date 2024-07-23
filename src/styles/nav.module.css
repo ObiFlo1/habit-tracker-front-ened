@@ -1,0 +1,35 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid black;
+  position: relative; /* Ensure the nav container is positioned correctly */
+}
+
+.showContainer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Offset by half of its width to center it */
+
+  width: 100%; /* Match the width of AddHabit */
+  height: 98%; /* Match the height of AddHabit */
+  background-color: white;
+
+  z-index: 1000;
+  transition: bottom 0.3s ease-in-out;
+  border-radius: 3% 3% 0 0;
+  border: 2px solid black;
+}
+
+.hiddenContainer {
+  position: fixed;
+  bottom: -100%; /* Start off-screen, adjust based on AddHabit height */
+  left: 0;
+  width: 100%; /* Match the width of AddHabit */
+  height: 98%; /* Match the height of AddHabit */
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: bottom 0.3s ease-in-out;
+}

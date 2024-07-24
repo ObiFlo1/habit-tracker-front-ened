@@ -16,21 +16,25 @@
 
 .cancel {
   padding: 10px 10px 10px 30px;
+  background-color: #4d99f5;
 }
 .save {
   padding: 10px 30px 10px 10px;
+  background-color: #4d99f5;
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .input {
   width: 20%;
+  padding: 0px 10px 10px 30px;
 }
 
 .options {
   width: 20%;
+  padding: 0px 10px 10px 30px;
 }

@@ -6,12 +6,12 @@ import AddHabit from "./AddHabit";
 import styles from "../styles/nav.module.css";
 
 function Nav() {
-  const { isActive, handleClick } = useContext(UniContext);
+  const { isActive, handleNavClick } = useContext(UniContext);
 
   return (
     <div className={styles.navContainer}>
-      <IoAddCircleOutline onClick={handleClick} />
-      <IoMenuSharp />
+      <IoAddCircleOutline onClick={handleNavClick} className={styles.add} />
+      <IoMenuSharp className={styles.menu} />
       <AddHabit
         className={isActive ? styles.showContainer : styles.hiddenContainer}
       />

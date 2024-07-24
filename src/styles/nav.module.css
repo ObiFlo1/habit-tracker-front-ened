@@ -33,3 +33,11 @@
   z-index: 1000;
   transition: bottom 0.3s ease-in-out;
 }
+
+.menu {
+  font-size: 2.5rem;
+}
+
+.add {
+  font-size: 2.5rem;
+}
